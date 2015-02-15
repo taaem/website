@@ -1,0 +1,41 @@
+header
+	height: $normal-section-height
+	background: url(../img/header.jpg)
+	background-size: cover
+	background-position: center center
+	.logo
+		float: left
+	nav
+		float: right
+		margin-right: 20px
+		padding-top: 20px
+
+		a
+			display: inline-block
+			margin-left: 20px
+			color: rgba(0,0,0,0.7)
+			font-family: $header-font
+		a:hover
+			color: rgba(0,0,0,1)
+
+	h1
+		padding-top: 70px
+		font-family: $header-font
+		font-size: 50px
+		text-align: center
+		clear: both
+	p
+		font-family: $header-font
+		font-size: 20px
+		text-align: center
+
+@media (max-width: 640px)
+	header
+		height: $mobile-section-height
+		nav
+			float: none
+			text-align: center
+			padding-top: 80px
+
+		h1
+			padding-top: 0px
